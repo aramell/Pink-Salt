@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -34,13 +27,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{
+        {/* <footer style={{
           marginTop: `2rem`,
           textAlign: `center`,
-          border: `0 10px #df7b59`
+          // border: `0 10px #df7b59`
         }}>
           © Pink Salt Creatives
-        </footer>
+        </footer> */}
       </div>
     </>
   )

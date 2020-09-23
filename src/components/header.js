@@ -1,18 +1,17 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Image from './image'
 
 const Header = ({ siteTitle }) => (
   <>
   <div style={{
     height: `50px`,
-    background: `#f8ceb8`
+    // background: `#f8ceb8`
   }}
   />
   <header
     style={{
-      background: `#df7b59`,
-       border: `30px solid #f8ceb8`,
+      // backgroundImage: `url(Social_ComingSoonBackground-01.png)`
+      //  border: `30px solid #f8ceb8`,
       //  borderRadius: `20px`
     }}
   >
@@ -22,7 +21,7 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
       }}
     >
-          <Image />
+          {/* <Image /> */}
     </div>
   </header>
   </>
