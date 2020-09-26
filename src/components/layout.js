@@ -20,20 +20,28 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+        style={
+          {
+            // margin: `0 auto`,
+            // maxWidth: 960,
+            // padding: `0 1.0875rem 1.45rem`,
+          }
+        }
       >
         <main>{children}</main>
-        {/* <footer style={{
-          marginTop: `2rem`,
-          textAlign: `center`,
-          // border: `0 10px #df7b59`
-        }}>
-          © Pink Salt Creatives
-        </footer> */}
+        <div className="footer">
+          <footer
+            style={{
+              height: `80px`,
+              marginTop: `2rem`,
+              textAlign: `center`,
+              background: `f09c82`,
+              fontFamily: `Verdana, Geneva, Tahoma, sans-serif`,
+            }}
+          >
+            © 2020 Pink Salt Creatives
+          </footer>
+        </div>
       </div>
     </>
   )

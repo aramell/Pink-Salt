@@ -3,7 +3,7 @@ html {
   height: 100%;
 }
 
-#___gatsby {
+.background {
   background-image: url("../images/Social_ComingSoonBackground-01.png");
   height: 100%;
 }
@@ -18,4 +18,26 @@ html {
   padding-bottom: 30px;
   color: #8a2219;
   font-weight: bold;
+  margin: 0px auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+}
+
+.examples {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  background: #f09c82;
+  font-size: 2em;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }

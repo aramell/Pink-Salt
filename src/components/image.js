@@ -13,10 +13,33 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const Image = ({ imageName }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "PSCreatives_Logo_FullColor.png" }) {
+      placeholderImage: file(
+        relativePath: { eq: "PSCreatives_Logo_FullColor.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      avacado: file(relativePath: { eq: "avacados.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      skeletons: file(relativePath: { eq: "Social_Halloween3.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 700) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      market: file(relativePath: { eq: "MarketForMakers2.png" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
@@ -25,12 +48,17 @@ const Image = () => {
       }
     }
   `)
-
-  if (!data?.placeholderImage?.childImageSharp?.fluid) {
-    return <div>Picture not found</div>
+  // if (!data?.placeholderImage?.childImageSharp?.fluid) {
+  //   return <div>Picture not found</div>
+  // }
+  const options = {
+    avacados: data.avacado.childImageSharp.fluid,
+    logoColor: data.placeholderImage.childImageSharp.fluid,
+    skeletons: data.skeletons.childImageSharp.fluid,
+    market: data.market.childImageSharp.fluid,
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={options[imageName]} />
 }
 
 export default Image
