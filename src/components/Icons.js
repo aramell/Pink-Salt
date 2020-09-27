@@ -17,6 +17,7 @@ export const Icons = () => {
         target="blank"
         style={{
           color: `#8a2219`,
+          fontSize: `1.3em`,
         }}
       >
         <FaFacebook />
@@ -26,6 +27,7 @@ export const Icons = () => {
         target="blank"
         style={{
           color: `#8a2219`,
+          fontSize: `1.3em`,
         }}
       >
         <FaEtsy />
@@ -35,6 +37,7 @@ export const Icons = () => {
         target="blank"
         style={{
           color: `#8a2219`,
+          fontSize: `1.3em`,
         }}
       >
         <FaInstagram />

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Pink Salt Creatives`,
+    title: `Pet Apparel for Your Furry Friend`,
     description: `Dog Bandanas to bark about`,
     author: `@ramell86`,
   },

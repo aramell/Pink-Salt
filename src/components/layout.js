@@ -29,19 +29,17 @@ const Layout = ({ children }) => {
         }
       >
         <main>{children}</main>
-        <div className="footer">
-          <footer
-            style={{
-              height: `80px`,
-              marginTop: `2rem`,
-              textAlign: `center`,
-              background: `f09c82`,
-              fontFamily: `Verdana, Geneva, Tahoma, sans-serif`,
-            }}
-          >
-            © 2020 Pink Salt Creatives
-          </footer>
-        </div>
+        <footer
+          style={{
+            minHeight: `40px`,
+            // marginTop: `20px`,
+            // textAlign: `center`,
+            background: `f09c82`,
+            fontFamily: `Verdana, Geneva, Tahoma, sans-serif`,
+          }}
+        >
+          © 2020 Pink Salt Creatives
+        </footer>
       </div>
     </>
   )

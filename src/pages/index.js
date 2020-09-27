@@ -2,15 +2,15 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Main } from '../components/main'
-import '../components/layout.css'
+import { Main } from "../components/main"
+import "../components/layout.css"
 
 const IndexPage = () => (
   <div className="background">
-  <Layout>
-    <SEO title="Home" />
+    <Layout>
+      <SEO title="Pink Salt Creatives" />
       <Main />
-  </Layout>
+    </Layout>
   </div>
 )
 

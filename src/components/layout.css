@@ -26,18 +26,21 @@ html {
 .examples {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  background: #f09c82;
+  padding-bottom: 35px;
+  margin-top: 15px;
 }
 
-.footer {
+footer {
   background: #f09c82;
-  font-size: 2em;
+  font-size: 14px;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: end;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
